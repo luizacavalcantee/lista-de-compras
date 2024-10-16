@@ -34,7 +34,7 @@ form.addEventListener("submit", (event) => {
                     setTimeout(() => {
                         alert.classList.add("invisible");
                     }, 500);
-                }, 3000);
+                }, 2000);
             }
             list.removeChild(listItem);
         });
