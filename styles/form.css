@@ -142,6 +142,9 @@ form {
     align-items: center;
     gap: 0.5rem;
     z-index: 100;
+    @media (max-width: 40em) {
+        max-width: calc(100% - 4rem);
+    }
 
     img {
         width: 1rem;

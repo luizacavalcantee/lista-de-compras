@@ -54,7 +54,7 @@ ul {
     width: 50%;
     max-width: 80em;
     @media (max-width: 40em) {
-        width: 23.4375rem;
+        width: 100%;
         padding-inline: 2rem;
     }
 }
