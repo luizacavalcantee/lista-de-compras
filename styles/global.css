@@ -51,9 +51,8 @@ ul {
 
 .container {
     margin-inline: auto;
-    width: 70%;
+    width: 50%;
     max-width: 80em;
-    
     @media (max-width: 40em) {
         width: 23.4375rem;
         padding-inline: 2rem;
