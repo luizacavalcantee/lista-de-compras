@@ -22,53 +22,18 @@
             <h1>Compras da semana</h1>
         </header>
 
-        <form>
-            <div class="new-item">
-                <input type="text" name="item" id="item" placeholder="Adicione um novo item" required />
+        <form id="form">
+            <div class="input">
+                <input type="text" name="new-item" id="new-item" placeholder="Adicione um novo item" required />
                 <button type="submit">Adicionar item</button>
             </div>
             
-            <div class="list">
-                <ul>
-                    <li>
-                        <input type="checkbox" name="item" id="item" />
-                        <label for="item">Arroz</label>
-                        <button type="button">
-                            <img src="assets/trash.svg" alt="deletar">
-                        </button>
-                    </li>
-                    <li>
-                        <input type="checkbox" name="item" id="item" />
-                        <label for="item">Feijão</label>
-                        <button type="button">
-                            <img src="assets/trash.svg" alt="deletar">
-                        </button>
-                    </li>
-                    <li>
-                        <input type="checkbox" name="item" id="item" />
-                        <label for="item">Macarrão</label>
-                        <button type="button">
-                            <img src="assets/trash.svg" alt="deletar">
-                        </button>
-                    </li>
-                    <li>
-                        <input type="checkbox" name="item" id="item" />
-                        <label for="item">Carne</label>
-                        <button type="button">
-                            <img src="assets/trash.svg" alt="deletar">
-                        </button>
-                    </li>
-                    <li>
-                        <input type="checkbox" name="item" id="item" />
-                        <label for="item">Frango</label>
-                        <button type="button">
-                            <img src="assets/trash.svg" alt="deletar">
-                        </button>
-                    </li>
+            <div class="full-list">
+                <ul id="list">
                 </ul>
             </div>
 
-            <div class="alert">
+            <div class="alert invisible">
                 <img src="assets/alert.svg" alt="alerta">
                 <strong>O item foi removido da lista</strong>
                 <button type="button">

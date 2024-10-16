@@ -68,3 +68,7 @@ ul {
         display: none;
     }
 }
+
+.invisible {
+    visibility: hidden;
+}

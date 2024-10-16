@@ -3,9 +3,10 @@ form {
     display: flex;
     flex-direction: column;
     margin-top: 2.5rem;
+    position: relative;
 }
 
-.new-item {
+.input {
     display: flex;
     gap: 1rem;
     margin-bottom: 2.5rem;
@@ -16,9 +17,15 @@ form {
 
     input {
         padding: 0.6875rem 1.125rem;
+        appearance: none;
         border-radius: 0.75rem;
         border: 2px solid var(--border-primary);
         width: 100%;
+        outline: none;
+        font-family: "Inter", sans-serif;
+        font-size: 1rem;
+        font-weight: 400;
+        color: var(--content-primary);
     }
 
     input::placeholder {
@@ -26,6 +33,14 @@ form {
         font-family: "inter", sans-serif;
         font-size: 1rem;
         font-weight: 400;
+    }
+
+    input:hover {
+        border-color: var(--border-hover);
+    }
+
+    input:focus {
+        border-color: var(--color-brand);
     }
     
     button {
@@ -40,9 +55,13 @@ form {
         line-height: 1.25rem;
         min-width: max-content;
     }
+
+    button:hover {
+        background-color: var(--color-brand-hover);
+    }
 }
 
-.list {
+.full-list {
     margin-bottom: 2rem;
     ul {
         display: flex;
@@ -141,4 +160,4 @@ form {
             height: 0.875rem;    
         }
     }
-}
+  }
