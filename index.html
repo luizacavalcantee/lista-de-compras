@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quicklist</title>
+  
+  <link rel="stylesheet" href="./styles/index.css">  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header id="logo" class="container desktop-only">
+        <img src="assets/logo.svg" alt="logo do Quicklist">
+    </header>
+    <main class="container">
+        <header>
+            <a href="#"><- Voltar</a>
+            <h1>Compras da semana</h1>
+        </header>
+
+        <form>
+            <div class="new-item">
+                <input type="text" name="item" id="item" placeholder="Adicione um novo item" required />
+                <button type="submit">Adicionar item</button>
+            </div>
+            
+            <div class="list">
+                <ul>
+                    <li>
+                        <input type="checkbox" name="item" id="item" />
+                        <label for="item">Arroz</label>
+                        <button type="button">
+                            <img src="assets/trash.svg" alt="deletar">
+                        </button>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="item" id="item" />
+                        <label for="item">Feijão</label>
+                        <button type="button">
+                            <img src="assets/trash.svg" alt="deletar">
+                        </button>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="item" id="item" />
+                        <label for="item">Macarrão</label>
+                        <button type="button">
+                            <img src="assets/trash.svg" alt="deletar">
+                        </button>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="item" id="item" />
+                        <label for="item">Carne</label>
+                        <button type="button">
+                            <img src="assets/trash.svg" alt="deletar">
+                        </button>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="item" id="item" />
+                        <label for="item">Frango</label>
+                        <button type="button">
+                            <img src="assets/trash.svg" alt="deletar">
+                        </button>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="alert">
+                <img src="assets/alert.svg" alt="alerta">
+                <strong>O item foi removido da lista</strong>
+                <button type="button">
+                    <img src="assets/delete.svg" alt="deletar">
+                </button>
+            </div>
+        </form>
+    </main>
+<script src="scripts.js"></script>
+</body>
+</html>
